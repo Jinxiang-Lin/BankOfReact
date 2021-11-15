@@ -5,6 +5,7 @@ class Debits extends Component {
   constructor() {
     super();
     this.state = {
+      id: 0,
       newDescription: "",
       newAmount: 0,
       date: "2017-11-27T15:36:09.609Z",
@@ -25,8 +26,10 @@ class Debits extends Component {
     e.preventDefault();
 
     let newDate = new Date();
+    let randomID = Math.floor(Math.random() * 9999);
     //console.log(JSON.stringify(newDate));
     const newD = {
+      id: randomID,
       description: this.state.newDescription,
       amount: parseFloat(this.state.newAmount),
       date: JSON.stringify(newDate),
@@ -56,7 +59,6 @@ class Debits extends Component {
           <button>Add Debit</button>
         </form>
 
-        {this.props.balance}
         <div>
           <Link to="/login">Log in</Link>
           <Link to="/userProfile">User Profile</Link>
@@ -64,6 +66,8 @@ class Debits extends Component {
           <Link to="/credits">Credits</Link>
           <Link to="/">Home</Link>
         </div>
+        <h1>Account Balance</h1>
+        {this.props.balance}
       </div>
     );
   }
