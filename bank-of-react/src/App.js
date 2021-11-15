@@ -53,7 +53,7 @@ class App extends Component {
         creditSum += credit.amount;
       });
       let accountBalance = creditSum - debitSum;
-      console.log("account balance is", accountBalance);
+      //console.log("account balance is", accountBalance);
       return {
         accountBalance: accountBalance,
       };
@@ -77,7 +77,7 @@ class App extends Component {
         creditSum += credit.amount;
       });
       let accountBalance = creditSum - debitSum;
-      console.log("account balance is", accountBalance);
+
       return {
         accountBalance: accountBalance,
       };
@@ -91,7 +91,7 @@ class App extends Component {
   };
   render() {
     const HomeComponent = () => (
-      <Home accountBalance={this.state.accountBalance} />
+      <Home accountBalance={this.state.accountBalance.toFixed(2)} />
     );
     const UserProfileComponent = () => (
       <UserProfile
@@ -107,7 +107,7 @@ class App extends Component {
       <Debits
         addDebit={this.addDebit}
         debits={debits}
-        balance={this.state.accountBalance}
+        balance={this.state.accountBalance.toFixed(2)}
       />
     );
     const { credits } = this.state;
@@ -115,7 +115,7 @@ class App extends Component {
       <Credits
         addCredit={this.addCredit}
         credits={credits}
-        balance={this.state.accountBalance}
+        balance={this.state.accountBalance.toFixed(2)}
       />
     );
     return (
