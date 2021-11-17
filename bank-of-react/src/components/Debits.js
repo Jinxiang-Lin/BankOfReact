@@ -1,6 +1,7 @@
 //class component
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "./styles/debit-credit.css";
 class Debits extends Component {
   constructor() {
     super();
@@ -38,15 +39,17 @@ class Debits extends Component {
   };
   render() {
     return (
-      <div>
+      <div className="debits-style">
         <h1>Debits</h1>
         {this.props.debits.map((debit) => {
           return (
-            <li key={debit.id}>
-              {debit.amount}
-              {debit.description}
-              {debit.date}
-            </li>
+            <ul>
+              <li key={debit.id}>
+                <span>${debit.amount}</span>
+                <span>{debit.description}</span>
+                <span>{debit.date}</span>
+              </li>
+            </ul>
           );
         })}
         <form onSubmit={this.handleSubmit}>
@@ -60,14 +63,23 @@ class Debits extends Component {
         </form>
 
         <div>
-          <Link to="/login">Log in</Link>
-          <Link to="/userProfile">User Profile</Link>
-          <Link to="/debits">Debits</Link>
-          <Link to="/credits">Credits</Link>
-          <Link to="/">Home</Link>
+          <Link to="/login" className="links">
+            Log in
+          </Link>
+          <Link to="/userProfile" className="links">
+            User Profile
+          </Link>
+          <Link to="/debits" className="links">
+            Debits
+          </Link>
+          <Link to="/credits" className="links">
+            Credits
+          </Link>
+          <Link to="/" className="links">
+            Home
+          </Link>
         </div>
-        <h1>Account Balance</h1>
-        {this.props.balance}
+        <h2>Account Balance: ${this.props.balance}</h2>
       </div>
     );
   }
