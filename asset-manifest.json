@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/BankOfReact/bank-of-react/static/css/main.ef000dfd.chunk.css",
+    "main.js": "/BankOfReact/bank-of-react/static/js/main.785b1d1d.chunk.js",
+    "main.js.map": "/BankOfReact/bank-of-react/static/js/main.785b1d1d.chunk.js.map",
+    "runtime-main.js": "/BankOfReact/bank-of-react/static/js/runtime-main.5aff4200.js",
+    "runtime-main.js.map": "/BankOfReact/bank-of-react/static/js/runtime-main.5aff4200.js.map",
+    "static/js/2.78114235.chunk.js": "/BankOfReact/bank-of-react/static/js/2.78114235.chunk.js",
+    "static/js/2.78114235.chunk.js.map": "/BankOfReact/bank-of-react/static/js/2.78114235.chunk.js.map",
+    "index.html": "/BankOfReact/bank-of-react/index.html",
+    "static/css/main.ef000dfd.chunk.css.map": "/BankOfReact/bank-of-react/static/css/main.ef000dfd.chunk.css.map",
+    "static/js/2.78114235.chunk.js.LICENSE.txt": "/BankOfReact/bank-of-react/static/js/2.78114235.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5aff4200.js",
+    "static/js/2.78114235.chunk.js",
+    "static/css/main.ef000dfd.chunk.css",
+    "static/js/main.785b1d1d.chunk.js"
+  ]
+}
