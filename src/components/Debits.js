@@ -75,7 +75,7 @@ class Debits extends Component {
           <Link to="/credits" className="links">
             Credits
           </Link>
-          <Link to="/" className="links">
+          <Link to="/BankOfReact" className="links">
             Home
           </Link>
         </div>
